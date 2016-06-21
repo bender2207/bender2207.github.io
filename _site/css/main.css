@@ -706,6 +706,8 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 @media screen and (max-width: 736px) { .wrapper.style5 .features li { border-top-color: #dfdfdf; } }
 @media screen and (max-width: 980px) { .wrapper { padding: 4em 3em 2em 3em ; } }
 @media screen and (max-width: 736px) { .wrapper { padding: 3em 2em 1em 2em ; } }
+.wrapper.style6 { background-color: rgba(255, 165, 79, 0.6); }
+.wrapper.style7 { background-color: rgba(98, 122, 145, 0.9); }
 
 /* Page Wrapper + Menu */
 #page-wrapper { -moz-transition: opacity 0.5s ease; -webkit-transition: opacity 0.5s ease; -ms-transition: opacity 0.5s ease; transition: opacity 0.5s ease; opacity: 1; padding-top: 3em; }

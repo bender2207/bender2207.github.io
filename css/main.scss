@@ -1266,6 +1266,14 @@ $baseurl: '{{ site.baseurl }}/images';
 		@include breakpoint(small) {
 			@include padding(3em, 2em);
 		}
+
+		&.style6 {
+			background-color: rgba(255, 165, 79, 0.6);
+		}
+
+		&.style7 {
+			background-color: rgba(98, 122, 145, 0.9);
+		}
 	}
 
 /* Page Wrapper + Menu */
