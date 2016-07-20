@@ -362,8 +362,8 @@ body, input, select, textarea { color: #fff; font-family: "Open Sans", Helvetica
 @media screen and (max-width: 1280px) { body, input, select, textarea { font-size: 12pt; } }
 @media screen and (max-width: 736px) { body, input, select, textarea { font-size: 11pt; letter-spacing: 0.0375em; } }
 
-a { -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease; -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease; -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease; transition: color 0.2s ease, border-bottom-color 0.2s ease; border-bottom: dotted 1px; color: inherit; text-decoration: none; }
-a:hover { border-bottom-color: transparent; }
+a { -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease; -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease; -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease; transition: color 0.2s ease, border-bottom-color 0.2s ease; border-bottom: transparent; color: inherit; text-decoration: none; }
+a:hover { color: #21b2a6; border-bottom-color: transparent; }
 
 strong, b { color: #fff; font-weight: 600; }
 
@@ -484,11 +484,13 @@ input[type="radio"] + label:before { border-radius: 100%; }
 .image.fit { display: block; margin: 0 0 2em 0; width: 100%; }
 .image.fit img { width: 100%; }
 
+.image:after { -moz-transition: opacity 0.25s ease-in-out; -webkit-transition: opacity 0.25s ease-in-out; -ms-transition: opacity 0.25s ease-in-out; transition: opacity 0.25s ease-in-out; background-image: url("images/overlay.png"); content: ''; display: block; height: 100%; left: 0; opacity: 0; position: absolute; top: 0; width: 100%; }
+
 .image.icon { -moz-perspective: 500px; -webkit-perspective: 500px; -ms-perspective: 500px; perspective: 500px; }
 
-.image.icon:before { -moz-transition: -moz-transform 0.1s ease-in-out, font-size 0.1s ease-in-out; -webkit-transition: -webkit-transform 0.1s ease-in-out, font-size 0.1s ease-in-out; -ms-transition: -ms-transform 0.1s ease-in-out, font-size 0.1s ease-in-out; transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out; color: #fff; font-size: 6em; height: 1em; left: 50%; line-height: 1em; margin: -0.5em 0 0 -0.5em; position: absolute; text-align: center; top: 50%; width: 1em; z-index: 1; }
+.image.icon:before { -moz-transition: -moz-transform 0.1s ease-in-out, font-size 0.1s ease-in-out; -webkit-transition: -webkit-transform 0.1s ease-in-out, font-size 0.1s ease-in-out; -ms-transition: -ms-transform 0.1s ease-in-out, font-size 0.1s ease-in-out; transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out; color: #fff; opacity: 0; font-size: 6em; height: 1em; left: 50%; line-height: 1em; margin: -0.5em 0 0 -0.5em; position: absolute; text-align: center; top: 50%; width: 1em; z-index: 1; }
 
-.image.icon:hover:before { -moz-transform: translateZ(1em); -webkit-transform: translateZ(1em); -ms-transform: translateZ(1em); transform: translateZ(1em); }
+.image.icon:hover:before { -moz-transform: translateZ(1em); -webkit-transform: translateZ(1em); -ms-transform: translateZ(1em); transform: translateZ(1em); opacity: 1; }
 
 .image.icon:hover:after { opacity: 1; }
 
